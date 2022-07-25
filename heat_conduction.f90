@@ -71,7 +71,7 @@ program heat_conduction
   call fourier_oned(T, q, k, nx, dx, T_west)
   
   print *, T
-  open(1, file="D:\Boison\GDrive\Numerical Analysis\heat_tx\temperature_profile.dat")
+  open(1, file="temperature_profile.dat")
   write(1,*) T
   close(1)
 
